@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dizo02/static/css/main.c6f5225e.css",
-    "main.js": "/dizo02/static/js/main.5e96764b.js",
+    "main.css": "/dizo02/static/css/main.7aa2a0a2.css",
+    "main.js": "/dizo02/static/js/main.62455adb.js",
     "static/js/453.32fdcf62.chunk.js": "/dizo02/static/js/453.32fdcf62.chunk.js",
     "static/media/l7.jpg": "/dizo02/static/media/l7.dc9bd41a4e41aebff3a1.jpg",
     "static/media/banner1.jpg": "/dizo02/static/media/banner1.db037eea827b3d4e5d92.jpg",
@@ -95,12 +95,12 @@
     "static/media/t9.jpg": "/dizo02/static/media/t9.b254ec1929445e535ce9.jpg",
     "static/media/kidgirl.jpg": "/dizo02/static/media/kidgirl.66fd08a1b9a94ffd98fc.jpg",
     "index.html": "/dizo02/index.html",
-    "main.c6f5225e.css.map": "/dizo02/static/css/main.c6f5225e.css.map",
-    "main.5e96764b.js.map": "/dizo02/static/js/main.5e96764b.js.map",
+    "main.7aa2a0a2.css.map": "/dizo02/static/css/main.7aa2a0a2.css.map",
+    "main.62455adb.js.map": "/dizo02/static/js/main.62455adb.js.map",
     "453.32fdcf62.chunk.js.map": "/dizo02/static/js/453.32fdcf62.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6f5225e.css",
-    "static/js/main.5e96764b.js"
+    "static/css/main.7aa2a0a2.css",
+    "static/js/main.62455adb.js"
   ]
 }
