@@ -1,14 +1,20 @@
 
 * {
-  margin: 0;
+  margin:0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
 
 body {
-  margin: 0;
   background-color: #f1f5f9;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -16,7 +22,7 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 12px 30px;
+  padding: 12px 16px;
   background-color: #1e293b;
 }
 
@@ -36,7 +42,8 @@ body {
 
 
 .search {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   padding: 8px 12px;
   border-radius: 6px;
   border: none;
@@ -70,9 +77,9 @@ body {
 
 .categories {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 8px 20px;
+  padding: 8px 12px;
   margin: 0;
   background-color: #f1f5f9;
 }
@@ -107,19 +114,26 @@ body {
 .banner {
   position: relative;
   width: 100%;
-  height: 160px;
+  max-width: 100%;
   overflow: hidden;
-  margin: 0;
-  border-radius: 8px;
+  margin: 16px auto;
 }
+
 
 
 .banner img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   animation: fade 0.6s ease-in-out;
 }
+
+@media (max-width: 768px) {
+  .banner img {
+    height: 180px;
+  }
+}
+
 
 
 @keyframes fade {
@@ -207,7 +221,7 @@ body {
 
 .mobiles-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 
@@ -480,7 +494,7 @@ h3 {
   display: flex;
   align-items: center;
   gap: 6px;
-  margin: 10px 20px 25px;
+  margin: 10px 12px 25px;
 }
 
 
@@ -867,4 +881,49 @@ h3 {
 
 .fk-footer-bottom i {
   margin-right: 5px;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* hide horizontal overflow */
+}
+
+
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mid-mobiles, .top-items {
+  display: flex;
+  flex-wrap: nowrap; /* scroll కావాలంటే */
+  gap: 18px;
+  padding: 16px;
+  overflow-x: auto;
+}
+
+.mid-img-box, .top-item {
+  flex: 0 0 auto; /* min-width కిందకి shrink కావద్దు */
+}
+@media (max-width: 768px) {
+  .furniture-deals {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .top-deals {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

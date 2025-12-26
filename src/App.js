@@ -175,9 +175,10 @@ const App = () => {
   }
 
   return (
-    <div>
 
-      
+    <div className="app-container">
+
+      <div className="main-content">
       <div className="header">
         <img src={logo} className="logo-img" />
         <h1 className="brand">Dizo</h1>
@@ -448,8 +449,8 @@ const App = () => {
     <span>© 2025 Dizo</span>
   </div>
 
-</footer>
-
+  </footer>
+      </div>
 
     </div>
   )
