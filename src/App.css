@@ -10,6 +10,12 @@ body {
   background-color: #f1f5f9;
 }
 
+.main-content {
+  max-width: 100%; /* fix width ని 100% చేస్తే */
+  margin: 0;       /* center align కత్తి remove అవుతుంది */
+  padding: 0 12px; /* optional */
+}
+
 .app-container {
   width: 100%;
   max-width: 100%;
@@ -893,11 +899,7 @@ html, body {
 
 
 
-.main-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 12px;
-}
+
 
 
 
