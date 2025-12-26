@@ -110,7 +110,7 @@ const mobilesData = [
     img: m11
   },
 
-  // ✅ Newly Added Mobiles
+  
   {
     id: 12,
     name: 'Samsung Galaxy A55 5G (Awesome Iceblue, 256 GB)  (8 GB RAM)',

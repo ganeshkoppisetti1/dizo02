@@ -11,13 +11,10 @@ const Mobile = ({ products, addToCart, buyNow }) => {
     );
   };
 
-  // Only show first 9 products for 3x3 grid
-  const visibleProducts = products.slice(0, 9);
-
   return (
     <div className="mobiles-wrapper">
       <div className="mobiles-grid">
-        {visibleProducts.map(item => (
+        {products.map(item => (
           <div className="mobile-card" key={item.id}>
             <div
               className="wishlist-icon"
