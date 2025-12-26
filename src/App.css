@@ -510,7 +510,9 @@ h3 {
   display: flex;
   align-items: center;
   gap: 6px;
-  margin: 10px 12px 25px;
+  margin: 10px auto 25px;
+  max-width: 1200px;
+  padding: 0 12px;
 }
 
 
@@ -530,21 +532,22 @@ h3 {
 
 .top-items {
   display: flex;
-  gap: 12px;                
-  overflow: hidden;
+  gap: 12px;
+  overflow-x: auto;
+  overflow-y: hidden;
   flex: 1;
+  scroll-behavior: smooth;
 }
 
 
 .top-item {
-  min-width: 130px;         
+  min-width: 130px;
+  flex: 0 0 auto;
   background: #fff;
   border-radius: 8px;
   padding: 10px;
   text-align: center;
-  cursor: pointer;
   box-shadow: 0 1px 6px rgba(0,0,0,0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .top-item:hover {
